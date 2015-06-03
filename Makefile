@@ -12,7 +12,7 @@ bootstrap: bootstrap.py
 
 buildout:
 	if ! test -f bin/buildout;then make bootstrap;fi
-	bin/buildout -vt 5
+	bin/buildout
 
 run:
 	if ! test -f bin/instance;then make buildout;fi
