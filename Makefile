@@ -3,11 +3,11 @@
 all: run
 
 bootstrap.py:
-	wget http://downloads.buildout.org/2/bootstrap.py	
+	wget http://downloads.buildout.org/2/bootstrap.py
 
 .PHONY: bootstrap buildout run test cleanall
 bootstrap: bootstrap.py
-	virtualenv-2.7 .
+	virtualenv-2.7 -p /usr/bin/python --system-site-packages .
 	./bin/python bootstrap.py
 
 buildout:
