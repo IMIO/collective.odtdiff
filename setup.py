@@ -44,6 +44,7 @@ setup(
         'five.grok',
         'plone.api',
         'setuptools',
+        'imio.pyutils',
     ],
     extras_require={
         'test': [
