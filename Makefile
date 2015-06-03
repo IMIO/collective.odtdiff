@@ -7,7 +7,7 @@ bootstrap.py:
 
 .PHONY: bootstrap buildout run test cleanall
 bootstrap: bootstrap.py
-	virtualenv-2.7 -p /usr/bin/python --system-site-packages .
+	virtualenv-2.7 .
 	./bin/python bootstrap.py
 
 buildout:
