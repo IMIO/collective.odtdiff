@@ -31,8 +31,8 @@ setup(
         "Programming Language :: Python :: 2.7",
     ],
     keywords='Python Zope Plone',
-    author='Franck NGAHA',
-    author_email='franck.o.ngaha@gmail.com',
+    author='fngaha',
+    author_email='franck.ngaha@imio.be',
     url='http://pypi.python.org/pypi/collective.odtdiff',
     license='GPL V2',
     packages=find_packages('src', exclude=['ez_setup']),
@@ -45,6 +45,7 @@ setup(
         'plone.api',
         'setuptools',
         'imio.pyutils',
+        'pyodcompare',
     ],
     extras_require={
         'test': [
