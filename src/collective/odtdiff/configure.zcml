@@ -30,4 +30,12 @@
         handler=".setuphandlers.post_install">
     </genericsetup:importStep>
 
+    <adapter
+        for="zope.interface.Interface 
+			 zope.publisher.interfaces.browser.IBrowserRequest" 
+        provides="collective.odtdiff.interfaces.IDocumentCompare"
+        factory="collective.odtdiff.monBusiness.maClasse"
+        permission="zope2.View"
+    />
+
 </configure>
